@@ -21,7 +21,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         await client.connect();
-        const itemCollection = client.db('getCrackingGears').collection('items')
+        const itemCollection = client.db('getCrackingGears2').collection('items2')
 
         app.get('/item', async (req, res) => {
             const query = {};
