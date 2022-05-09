@@ -50,7 +50,7 @@ async function run() {
             const items = await cursor.toArray();
             res.send(items);
         })
-        //  Delete item
+        //---  Delete item  ---//
         app.delete('/item/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
