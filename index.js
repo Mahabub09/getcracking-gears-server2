@@ -87,7 +87,7 @@ app.get("/", (req, res) => {
 
 });
 app.get("/hero", (req, res) => {
-    res.send('heroku problem solving')
+    res.send('heroku problem ')
 })
 
 app.listen(port, () => {
